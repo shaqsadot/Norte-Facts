@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+  <title>Norte Facts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <li><a href="index.html"><img src="pics/nf.png"></a></li>
+    </div>
+    <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="WhereToGo.html">Where to go</a></li>
+        <li><a href="">Where to stay</a></li>
+        <li><a href="HowToGetHere.html">How to get here</a></li>
+        <li><a href="login.html">Register</a></li>
+    </ul>
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+    </div>
+</nav>
+
+  <div class="logocenter">
+      <img src="pics/logomid.png" width="700px" height="350px">
+  </div>
+
+  <div class="container">
+    <div class="text">
+    <h1 class="center">Highlights</h1>
+    <h5 class="center">Ilocos Norte holds more that you think.
+    Look into these spots!!
+    </h5>
+     
+    <div class="home-content"> 
+      <div class="box1">
+          <img src="pics/tower.jpg" width= "500" height="577">
+          <br><br>
+          <h3>Currimao watch tower</h3>
+      </div>
+
+      <div class="box1">
+          <img src="pics/malacanang.jpg" width= "500" height="577">      
+          <br><br>
+          <h3>Malacañang of the North</h3>
+      </div>
+
+      <div class="box1">
+          <img src="pics/juanluna.jpg" width= "500" height="577">
+          <br><br>
+          <h3>Juan Luna Shrine</h3>
+      </div>
+
+      <div class="box1">
+          <img src="pics/lavirgen.jpg" width= "500" height="577">
+          <br><br>
+          <h3>La Virgen Milagrosa</h3>
+      </div>
+
+
+
+  </div>
+   </div>
+  </div>
+
+  <footer>
+    <div class="left-section">
+      <h3>Send us a message if you need assistance,<br>
+      Ilocos Norte Tourism Office</h3>
+      Provincial Capitol, Brgy. 10 J.P. Rizal St.<br>
+      Laoag City 2900, Philippines<br>
+      City, State, ZIP<br>
+      <a href="Tel.: +63 (077) 772 1213 | 300 9262">Tel.: +63 (123) 456 7890 | 123 4567</a><br>
+      <a href="Mobile: +63 908-810-8654 to 55">Mobile: +63 123-456-7890 to 55</a><br>
+      <a href="mailto:tourismilocosnorte@gmail.com">tourismilocosnorte@gmail.com</a>
+    </div>
+    <div class="contact-details">
+      <address>
+        <img src="pics/ilocosnorte.webp" alt="Left Image 1">
+        <img src="pics/logo.png" alt="Left Image 2"><br>
+        <h4>Provincial Government of Ilocos Norte<br>
+          Copyright ©2023 All rights reserved<br>
+          <br>
+          This website is powered by the PGIN-Information<br>
+          Technology Office
+        </h4>
+
+
+      </address>
+    </div>
+    <div class="right-section">
+      <p>Follow us:</p>
+      <a href="#" target="_blank">Facebook</a><br>
+      <a href="#" target="_blank">Twitter</a><br>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

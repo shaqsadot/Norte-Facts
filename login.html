@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <li><a href="index.html"><img src="pics/nf.png"></a></li>
+    </div>
+    <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="WhereToGo.html">Where to go</a></li>
+        <li><a href="WhereToStay.html">Where to stay</a></li>
+        <li><a href="HowToGetHere.html">How to get here</a></li>
+        <li><a href="login.html">Register</a></li>
+    </ul>
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+    </div>
+</nav>
+
+<div class="container3" id="signup" style="display:none;">
+  <h1 class="form-title">Register</h1>
+  <form method="post" action="">
+    <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+    <div class="input-group">
+       <i class="fas fa-user"></i>
+       <input type="text" id="fName" placeholder="First Name" required>
+       <label for="fName">First Name</label>
+    </div>
+    <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="lName" placeholder="Last Name" required>
+        <label for="lName">Last Name</label>
+    </div>
+    <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="rEmail" placeholder="Email" required>
+        <label for="rEmail">Email</label>
+    </div>
+    <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="rPassword" placeholder="Password" required>
+        <label for="rPassword">Password</label>
+    </div>
+    <button class="btn" id="submitSignUp">Sign Up</button>
+  </form>
+  <div class="links">
+    <p>Already Have Account ?</p>
+    <button id="signInButton">Sign In</button>
+  </div>
+</div>
+
+<div class="container3" id="signIn">
+  <h1 class="form-title">Sign In</h1>
+  <form method="post" action="">
+    <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+    <div class="input-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" id="email" placeholder="Email" required>
+      <label for="email">Email</label>
+    </div>
+    <div class="input-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" id="password" placeholder="Password" required>
+      <label for="password">Password</label>
+    </div>
+    <p class="recover"><a href="#">Recover Password</a></p>
+    <button class="btn" id="submitSignIn">Sign In</button>
+  </form>
+  <div class="links">
+    <p>Don't have account yet?</p>
+    <button id="signUpButton">Sign Up</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+
+      <footer>
+        <div class="left-section">
+          <h3>Send us a message if you need assistance,<br>
+          Ilocos Norte Tourism Office</h3>
+          Provincial Capitol, Brgy. 10 J.P. Rizal St.<br>
+          Laoag City 2900, Philippines<br>
+          City, State, ZIP<br>
+          <a href="Tel.: +63 (077) 772 1213 | 300 9262">Tel.: +63 (123) 456 7890 | 123 4567</a><br>
+          <a href="Mobile: +63 908-810-8654 to 55">Mobile: +63 123-456-7890 to 55</a><br>
+          <a href="mailto:tourismilocosnorte@gmail.com">tourismilocosnorte@gmail.com</a>
+        </div>
+        <div class="contact-details">
+          <address>
+            <img src="pics/ilocosnorte.webp" alt="Left Image 1">
+            <img src="pics/logo.png" alt="Left Image 2"><br>
+            <h4>Provincial Government of Ilocos Norte<br>
+              Copyright ©2023 All rights reserved<br>
+              <br>
+              This website is powered by the PGIN-Information<br>
+              Technology Office
+            </h4>
+    
+    
+          </address>
+        </div>
+        <div class="right-section">
+          <p>Follow us:</p>
+          <a href="#" target="_blank">Facebook</a><br>
+          <a href="#" target="_blank">Twitter</a><br>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </footer>
+
+      
+</body>
+</html>
